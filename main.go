@@ -10,10 +10,16 @@ func main() {
 	// fmt.Println(card)
 	// card = "Five of Diamonds"
 	// fmt.Println(card)
-	card := newCard()
+	cards := deck{"Ace of Diamonds", newCard()}
+	cards = append(cards, "Six of Spades")
+	// for i, card := range cards {
+	// 	fmt.Println(i, card)
+	// }
+	fmt.Println(cards)
+
+	cards.print()
 }
 
-
 func newCard() string {
-	retunrn "Five of Diamonds"
+	return "Five of Diamonds"
 }
