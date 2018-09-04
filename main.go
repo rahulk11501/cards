@@ -14,6 +14,10 @@ func main() {
 	// fmt.Println(cards)
 	cards := newDeck()
 	cards.print()
+
+	hand, remaingDeck := deal(cards, 5)
+	hand.print()
+	remaingDeck.print()
 }
 
 // func newCard() string {
