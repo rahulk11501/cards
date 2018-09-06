@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
 	// var card string = "Ace of Spades"
 	// card := "Ace of Spades"
@@ -18,6 +22,9 @@ func main() {
 	hand, remaingDeck := deal(cards, 5)
 	hand.print()
 	remaingDeck.print()
+
+	fmt.Println(cards.toString())
+	cards.saveToFile("my_cards")
 }
 
 // func newCard() string {
